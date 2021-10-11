@@ -133,8 +133,8 @@ export const CategoriesWrapper = styled.div`
   overflow-x: scroll;
 
   ::-webkit-scrollbar {
-    width: 12px;
-    height: 8px;
+    width: 8px;
+    height: 12px;
     background-color: transparent;
   }
 `

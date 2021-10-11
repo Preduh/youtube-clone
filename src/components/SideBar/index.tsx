@@ -24,17 +24,42 @@ const SideBar: React.FC = () => {
         {/* Expanded Sidebar */}
         <div className="fullSidebar">
           <div className="iconsBar">
-            <div className="expandedMenuIcon">
-              <input
-                type="checkbox"
-                className="menuCheckbox"
-                id="menuBox"
-                onChange={expandBar}
-              />
-              <label className="menuLabel" htmlFor="menuBox">
-                <img src="./images/menu.png" alt="menu" />
-              </label>
+            <div className="header">
+              <div className="expandedMenuIcon">
+                <input
+                  type="checkbox"
+                  className="menuCheckbox"
+                  id="menuBox"
+                  onChange={expandBar}
+                />
+                <label className="menuLabel" htmlFor="menuBox">
+                  <img src="./images/menu.png" alt="menu" />
+                </label>
+              </div>
+              <img src="./images/branco.png" alt="Logo" />
             </div>
+            <section className="menuSection">
+              <div className="firstSection">
+                <div>
+                  <div>
+                    <img src="./images/home.png" alt="Home" />
+                  </div>
+                  <p>Início</p>
+                </div>
+                <div>
+                  <div>
+                    <img src="./images/compass.png" alt="Compass" />
+                  </div>
+                  <p>Explorar</p>
+                </div>
+                <div>
+                  <div>
+                    <img src="./images/subscription.png" alt="Subscrition" />
+                  </div>
+                  <p>Inscrições</p>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>

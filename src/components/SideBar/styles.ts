@@ -7,7 +7,7 @@ export const Container = styled.div`
 
   .menu {
     width: 100%;
-    height: 73px;
+    height: 56px;
     background-color: transparent;
     border: none;
     padding: 16px 0px;
@@ -36,18 +36,75 @@ export const Container = styled.div`
 
       .iconsBar {
         background-color: #212121;
-        width: 74px;
+        width: 100%;
         height: 100%;
 
-        .expandedMenuIcon {
-          width: 100%;
-          height: 73px;
-          background-color: transparent;
-          border: none;
-          padding: 16px 0px;
+        .header {
           display: flex;
+          flex-direction: row;
+          height: 56px;
           align-items: center;
-          justify-content: center;
+
+          .expandedMenuIcon {
+            width: 74px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+
+            .menuLabel {
+              img {
+                width: 28px;
+                height: 28px;
+              }
+            }
+          }
+
+          img {
+            width: 90px;
+            height: 27px;
+          }
+        }
+
+        .menuSection {
+          height: auto;
+          overflow-y: scroll;
+
+          .firstSection {
+            height: 100%;
+            padding: 16px 0px;
+            border-bottom: 1px solid #3c3c3c;
+
+            div {
+              display: flex;
+              flex-direction: row;
+              height: 40px;
+              align-items: center;
+              cursor: pointer;
+
+              div {
+                width: 74px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+
+              p {
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+              }
+
+              &:hover {
+                background-color: #ffffff12;
+              }
+            }
+          }
         }
       }
     }
