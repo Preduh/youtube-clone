@@ -1,4 +1,4 @@
-# Clone da interface inicial do (https://www.youtube.com)
+# Clone da interface inicial do [Youtube](https://www.youtube.com)
 
 * Desenvolvido em React JS e Typescript
 
